@@ -1,0 +1,15 @@
+<div setBackground>
+  <p>
+    The background color of this child1 component is set using custom directive
+  </p>
+  <button appAppHover>This Button styled Using HostBinding</button>
+  <p>Yes This is Child One's content</p>
+  <hr />
+  <ng-content></ng-content>
+  <hr />
+  <p>
+    Click on Below button , and check console , for ng-content's paragraph
+    element reference
+  </p>
+  <button (click)="onClickCheckRef()">Element Ref log</button>
+</div>

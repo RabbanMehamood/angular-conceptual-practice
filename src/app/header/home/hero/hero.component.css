@@ -1,0 +1,16 @@
+div {
+  height: 25vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  display: inline;
+  width: 100px;
+  background-color: rgb(16, 16, 77);
+  color: azure;
+  padding: 10px;
+  border-radius: 6px;
+}

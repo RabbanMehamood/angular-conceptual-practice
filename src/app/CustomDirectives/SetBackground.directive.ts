@@ -33,4 +33,4 @@ export class SetBackground implements OnInit {
     );
   }
 }
-8500485184;
+// 8500485184;

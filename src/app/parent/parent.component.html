@@ -1,0 +1,48 @@
+<h1 class="parenth">Ng-Container, Ng-Template Concept</h1>
+<div *ngIf="toggleCheck">
+  <p>{{ text }}</p>
+</div>
+<ng-container *ngIf="!toggleCheck; else myTemplate">
+  <p>Button Toggled to False Click Again To Toggle True</p>
+</ng-container>
+<button (click)="onClick()">Click Me!</button>
+
+<ng-template #myTemplate>
+  <p>Along with the Event Binding Checking ng-template</p>
+</ng-template>
+
+<ng-template *ngIf="true" #checkTemplate>
+  <p>
+    This is ng-template , Even though applied with NgIf structural directive Not
+    getting rendered, only works with refrence variable using *ngTemplateOutlet
+  </p>
+</ng-template>
+<hr />
+<h1 class="parenth">Ng-Content ConCept</h1>
+<app-child>
+  <div class="ngcontent">
+    This 1st ng-content that is not visible or rendered in the HTML Page, but I
+    rendered it using the ng-concept.
+  </div>
+  <h5 class="heading">
+    I have created H1, after the div below this para, but displaying it using
+    the select attribute in the ng-content of parent
+  </h5></app-child
+>
+<hr />
+<h1 class="parenth">ContentChild Decorator ConCept</h1>
+<app-child1>
+  <p #childOne>
+    This paragraph, is going to displayed using the ContentChild Decorator.
+  </p>
+</app-child1>
+<hr />
+<h1>Input Decorator Test</h1>
+<label for="input">Parent Input:</label>
+<input type="text" [(ngModel)]="parentValue" placeholder="enter something" />
+<input
+  type="text"
+  (input)="onInputChange($event)"
+  placeholder="enter something"
+/>
+<app-child [parentPropertyValue]="parentValue"></app-child>

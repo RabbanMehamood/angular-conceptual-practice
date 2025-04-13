@@ -1,0 +1,12 @@
+<div appHighlight>
+  <ng-content select=".heading"></ng-content>
+  <p>
+    Here I am working on the ng-content concept,where the content inside the
+    component selector(the custom tag for a component ) when placed it wont get
+    render in the page, but some times we need it to render, so with the use of
+    ng-content: which is a special directive used for content-projection. which
+    allows you to insert dynaimic content into a coponent from its parent.
+  </p>
+  <ng-content select=".ngcontent"></ng-content>
+  <p>Input Decorator Value: {{ parentPropertyValue }}</p>
+</div>

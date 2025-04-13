@@ -1,0 +1,10 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 10px 10px 5px 0px rgb(227, 227, 229);
+  margin-bottom: 100px;
+}
+app-sidebar {
+  display: flex;
+  align-items: center;
+}

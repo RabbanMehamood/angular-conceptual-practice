@@ -1,0 +1,10 @@
+p {
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+.zoom-in-style {
+  background-color: rgb(101, 218, 218);
+  transform: scale(1.1);
+  color: rgb(9, 5, 5);
+}
